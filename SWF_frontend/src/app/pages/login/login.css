@@ -88,3 +88,23 @@ button{
     height: 50%;
     opacity: 50%;
 }
+
+.password-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.eye{
+    width: auto;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
