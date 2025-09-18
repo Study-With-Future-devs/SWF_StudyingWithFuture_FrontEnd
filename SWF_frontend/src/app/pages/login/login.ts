@@ -19,8 +19,8 @@ import { AuthService } from '../../services/auth'
 })
 export class Login {
   credentials={
-    email: '',
-    password: ''
+    Email: '',
+    Senha: ''
   }
   passwordVisible: boolean = false;
   constructor(private authService: AuthService){ }

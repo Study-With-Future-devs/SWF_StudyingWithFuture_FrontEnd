@@ -4,10 +4,10 @@
         <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
             <h1>LOGIN</h1>
             <input type="email" placeholder="Insira o e-mail academico *" name="email" 
-           [(ngModel)]="credentials.email" required>
+           [(ngModel)]="credentials.Email" required>
             
             <div class="password-container">
-                <input [type]="passwordVisible ? 'text' : 'password'" name="senha" [(ngModel)]="credentials.password" placeholder="Insira sua senha *" required>
+                <input [type]="passwordVisible ? 'text' : 'password'" name="senha" [(ngModel)]="credentials.Senha" placeholder="Insira sua senha *" required>
                 <button class="eye" (click)="togglePassword()" type="button">
                     <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" nzTheme="outline"></span>
                 </button>
