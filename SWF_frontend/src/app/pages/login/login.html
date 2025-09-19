@@ -16,6 +16,9 @@
             <button type="submit" [disabled]="!loginForm.form.valid">
                 <img src="login/icon-login-button.png" alt="login"> LOGIN
             </button>
+            <div *ngIf="mensagemErro" class="mensagem-erro">
+                {{ mensagemErro }}
+            </div>
         </form> 
         <img src="login/Rectangle1.png" class="enfeite-login1">
         <img src="login/Rectangle2.png" class="enfeite-login2">

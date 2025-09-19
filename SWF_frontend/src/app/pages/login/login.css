@@ -33,7 +33,7 @@ html, body {
 
 form{
     display: flex;
-    height: 70%;
+    height: auto;
     max-width: 80%;
     flex-direction: column;
     justify-content: center;
@@ -108,6 +108,15 @@ button{
     display: flex;
     align-items: center;
     width: auto;
+}
+
+.mensagem-erro{  
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    background-color: #e28f8cb0;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1024px){
