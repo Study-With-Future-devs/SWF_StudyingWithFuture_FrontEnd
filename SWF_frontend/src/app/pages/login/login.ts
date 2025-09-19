@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { routes } from '../../app.routes';
+import { Router } from '@angular/router';
 import { NzIconModule, NZ_ICONS } from 'ng-zorro-antd/icon';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,7 +25,11 @@ export class Login {
   }
   mensagemErro: string = ''
   passwordVisible: boolean = false
-  constructor(private authService: AuthService){ }
+
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ){ }
 
   togglePassword(){
     this.passwordVisible = !this.passwordVisible
@@ -36,6 +40,7 @@ export class Login {
       next: (response) => {
         console.log("login bem sucedido", response)
         this.mensagemErro = 'Login bem sucedido'
+        this.router.navigate(['/login'])
         //talvez redirecionar o usuário e gerar token
       },
       error: (err) => {
