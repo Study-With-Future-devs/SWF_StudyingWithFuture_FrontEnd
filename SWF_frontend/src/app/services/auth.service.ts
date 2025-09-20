@@ -7,7 +7,7 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5201/api/Auth';
+  private apiUrl = 'http://localhost:5004/api/Auth';
 
 
   constructor(private http: HttpClient) { }
