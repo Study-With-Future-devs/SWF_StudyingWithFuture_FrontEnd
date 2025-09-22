@@ -75,6 +75,11 @@ button{
     font-size: 1rem;
 }
 
+button:hover{
+    background-color: #6769de;
+    cursor: pointer;
+}
+
 .enfeite-login1{
     position: absolute;
     top: 0px;

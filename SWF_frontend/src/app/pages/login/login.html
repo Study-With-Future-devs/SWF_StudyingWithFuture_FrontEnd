@@ -17,7 +17,17 @@
                 <img src="login/icon-login-button.png" alt="login"> LOGIN
             </button>
             <div *ngIf="mensagemErro" class="mensagem-erro">
-                {{ mensagemErro }}
+
+                            @if(loginSuccess == false){
+                <div class="mensagem-erro" style="background-color: #e28f8cb0;;">
+                    {{ mensagemErro }}
+                </div>
+            }
+            @else {
+                 <div class="mensagem-erro" style="background-color: rgb(125, 216, 125);">
+                    {{ mensagemErro }}
+                </div>
+            }
             </div>
         </form> 
         <img src="login/Rectangle1.png" class="enfeite-login1">

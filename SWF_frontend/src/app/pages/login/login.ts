@@ -25,6 +25,7 @@ export class Login {
   }
   mensagemErro: string = ''
   passwordVisible: boolean = false
+  loginSuccess:boolean = false
 
   constructor(
     private authService: AuthService,
@@ -38,12 +39,14 @@ export class Login {
     console.log('Formulário enviado!')
     this.authService.login(this.credentials).subscribe({
       next: (response) => {
+        this.loginSuccess = true
         console.log("login bem sucedido", response)
         this.mensagemErro = 'Login bem sucedido'
         this.router.navigate(['/login'])
         //talvez redirecionar o usuário e gerar token
       },
       error: (err) => {
+        this.loginSuccess = false
         console.log("Erro no login", err);
         this.mensagemErro = 'Erro ao efetuar login'
       }
