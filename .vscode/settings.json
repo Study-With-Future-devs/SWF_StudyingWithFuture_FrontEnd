@@ -1,0 +1,74 @@
+{
+  "workbench.colorCustomizations": {
+    // 🖥️ Barra de título
+    "titleBar.activeBackground": "#9333ea",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#6b21a8",
+    "titleBar.inactiveForeground": "#d8b4fe",
+    "titleBar.border": "#000000",
+
+    // 📦 Barra lateral
+    "sideBar.background": "#1e1b2e",
+    "sideBar.foreground": "#f3e8ff",
+    "sideBar.border": "#4c1d95",
+    "sideBarTitle.foreground": "#c084fc",
+    "sideBarSectionHeader.background": "#4c1d95",
+    "sideBarSectionHeader.foreground": "#ffffff",
+
+    // 🎛️ Barra de atividade
+    "activityBar.background": "#7e22ce",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.border": "#4c1d95",
+    "activityBarBadge.background": "#a78bfa",
+    "activityBarBadge.foreground": "#000000",
+
+    // 📊 Barra de status
+    "statusBar.background": "#581c87",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.border": "#000000",
+    "statusBar.noFolderBackground": "#312e81",
+    "statusBar.debuggingBackground": "#c026d3",
+    "statusBar.debuggingForeground": "#ffffff",
+    "statusBarItem.prominentBackground": "#d8b4fe",
+    "statusBarItem.prominentHoverBackground": "#c084fc",
+
+    // 📑 Editor
+    "editor.background": "#1e1b2e",
+    "editor.foreground": "#f5f3ff",
+    "editor.lineHighlightBackground": "#3b0764",
+    "editor.selectionBackground": "#8b5cf6",
+    "editorCursor.foreground": "#facc15",
+    "editorWhitespace.foreground": "#a78bfa",
+    "editorLineNumber.foreground": "#d8b4fe",
+    "editorIndentGuide.background": "#5b21b6",
+    "editorIndentGuide.activeBackground": "#c084fc",
+
+    // 🔍 Painéis inferiores
+    "panel.background": "#1e1b2e",
+    "panel.border": "#4c1d95",
+    "panelTitle.activeForeground": "#d8b4fe",
+    "panelTitle.inactiveForeground": "#a78bfa",
+    "panelTitle.activeBorder": "#c084fc",
+
+    // 📂 Explorador de arquivos
+    "list.activeSelectionBackground": "#7e22ce",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.hoverBackground": "#4c1d95",
+    "list.inactiveSelectionBackground": "#312e81",
+    "list.inactiveSelectionForeground": "#d8b4fe",
+
+    // 🔐 Terminal integrado
+    "terminal.background": "#1e1b2e",
+    "terminal.foreground": "#f3e8ff",
+    "terminalCursor.background": "#000000",
+    "terminalCursor.foreground": "#facc15",
+    "terminal.ansiBlack": "#3b0764",
+    "terminal.ansiRed": "#f472b6",
+    "terminal.ansiGreen": "#22c55e",
+    "terminal.ansiYellow": "#eab308",
+    "terminal.ansiBlue": "#8b5cf6",
+    "terminal.ansiMagenta": "#d946ef",
+    "terminal.ansiCyan": "#06b6d4",
+    "terminal.ansiWhite": "#f5f3ff"
+  }
+}
