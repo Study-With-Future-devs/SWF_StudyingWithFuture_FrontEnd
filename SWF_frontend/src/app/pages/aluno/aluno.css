@@ -1,5 +1,94 @@
 body{
-    background-color: #ebebeb;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 237px) 20vw;
+    grid-template-rows: 10vh 15vh repeat(4, 1fr);
+    grid-column-gap: 10px;
+    background-color: #d4d5dd;
+}
+
+app-banner{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1 / span 4 ;
+}
+
+.aluno{
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 6;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+app-user-display{
+    background-color: white;
+    display: grid;
+    grid-column: 4;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    border-bottom-left-radius: 20px;
+}
+
+.calendar{
+    display: flex;
+    margin-top: 10px;
+    grid-column: 4;
+    grid-row: 3;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+@media (max-width: 1024px){
+    body{
+        border: 1px solid red;
+    }
+    .calendar{
+        /* display: none; */
+    }
+}
+@media(max-width: 975px){
+    body{
+        border: 1px solid blue;
+    }
+    .calendar{
+        /* display: none; */
+    }
+}
+@media(max-width: 920px){
+    body{
+        border: 1px solid green;
+        grid-template-columns: repeat(2, 237px) 15vw;
+    }
+    .calendar{
+        display: none;
+    }
+    app-user-display{
+
+    }
+}
+
+@media(max-width: 860px){
+    body{
+        border: 1px solid pink;
+        grid-template-columns: repeat(2, 237px) auto;
+    }
+    .calendar{
+        display: none;
+    }
+    app-user-display p{
+        display: none;
+
+    }
 }

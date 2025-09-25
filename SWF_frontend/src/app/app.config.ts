@@ -9,13 +9,17 @@ import { provideNzIcons } from 'ng-zorro-antd/icon';
 import { pt_BR, provideNzI18n } from 'ng-zorro-antd/i18n';
 import { EyeOutline, EyeInvisibleOutline } from "@ant-design/icons-angular/icons";
 import { LogoutOutline } from '@ant-design/icons-angular/icons';
+import { BellOutline } from '@ant-design/icons-angular/icons';
+import { CaretDownOutline } from '@ant-design/icons-angular/icons';
 import { JwtInterceptor } from './interceptor/jwt.interceptor';
 import { routes } from './app.routes';
 
 const appIcons = [
   EyeOutline,
   EyeInvisibleOutline,
-  LogoutOutline
+  LogoutOutline,
+  BellOutline,
+  CaretDownOutline
 ];
 
 registerLocaleData(pt);
